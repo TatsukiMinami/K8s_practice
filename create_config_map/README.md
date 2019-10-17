@@ -25,14 +25,12 @@ kubectl apply -f nginx.yml
 pod/nginx created
 ```
 
-##　確認する
-```
- kubectl exec -n app -it nginx ash
- / #
- ```
 
  ## curlを入れる
  ```
+ kubectl exec -n app -it nginx ash
+ / #
+ 
  apk add --update curl
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/community/x86_64/APKINDEX.tar.gz
